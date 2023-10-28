@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+ text-decoration: none;
+}
+.dashboard{
+    background: url('./assets/protruding-squares.svg') no-repeat center fixed;
+    background-position: 0px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;
+
+}
