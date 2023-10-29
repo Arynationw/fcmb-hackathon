@@ -55,17 +55,6 @@ const Dashboard = () => {
           </div>
           <div>
             <Link
-              to={"/personal/information/basic"}
-              className="font-semibold leading-6 text-fcmb hover:text-indigo-500"
-            >
-              <div className=" rounded bg-fcmbLight  p-4">
-                <PaperAirplaneIcon className="w-6 h-6" />
-              </div>
-              <span className="text-justify pl-2">Send</span>
-            </Link>
-          </div>
-          <div>
-            <Link
               to={"/loan"}
               className="font-semibold leading-6 text-fcmb hover:text-indigo-500"
             >
@@ -76,14 +65,20 @@ const Dashboard = () => {
             </Link>
           </div>
           <div>
-            <Link
-              to={"/personal/information/basic"}
-              className="font-semibold leading-6 text-fcmb hover:text-indigo-500"
-            >
+            <Link className="font-semibold leading-6 text-fcmb hover:text-indigo-500">
+              <div className=" rounded bg-fcmbLight  p-4">
+                <PaperAirplaneIcon className="w-6 h-6" />
+              </div>
+              <span className="text-justify pl-2">Send</span>
+            </Link>
+          </div>
+
+          <div>
+            <Link className="font-semibold leading-6 text-fcmb hover:text-indigo-500">
               <div className=" rounded bg-fcmbLight  p-4">
                 <BookmarkSquareIcon className="w-6 h-6" />
               </div>
-              <span className="text-justify">Request</span>
+              <span className="text-justify">Recieve</span>
             </Link>
           </div>
         </div>

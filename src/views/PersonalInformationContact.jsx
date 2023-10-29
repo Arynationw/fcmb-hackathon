@@ -2,7 +2,7 @@ import React from "react";
 import { Fragment, useRef, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { PhotoIcon, UserCircleIcon } from "@heroicons/react/24/solid";
-
+import Navbar from "../components/Navbar";
 import { ExclamationTriangleIcon } from "@heroicons/react/24/outline";
 import { useNavigate } from "react-router-dom";
 function PersonalInformationContact() {

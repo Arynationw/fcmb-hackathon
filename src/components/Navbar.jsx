@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { useNavigate } from "react-router-dom";
 function Navbar() {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
@@ -10,20 +11,13 @@ function Navbar() {
       title: "Home",
     },
     {
-      id: "features",
-      title: "Features",
-    },
-    {
-      id: "product",
-      title: "Product",
-    },
-    {
-      id: "clients",
-      title: "Clients",
+      id: "history",
+      title: "Loan History",
     },
   ];
   const menu = <Bars3BottomRightIcon className="h-8 w-8 " />;
   const close = <XMarkIcon className="h-8 w-8 " />;
+  const navigate = useNavigate();
   return (
     <div className="py-6 flex ">
       <div className="pr-5">
@@ -55,7 +49,9 @@ function Navbar() {
                 className={`font-poppins pl-2 font-normal cursor-pointer text-[16px] ${
                   active === nav.title ? "text-white" : "text-dimWhite"
                 } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
-                onClick={() => setActive(nav.title)}
+                onClick={() => {
+                  setActive(nav.title), navigate("/loan/history");
+                }}
               >
                 <a href={`#${nav.id}`}>{nav.title}</a>
               </li>

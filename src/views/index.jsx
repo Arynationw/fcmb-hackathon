@@ -7,9 +7,9 @@ import PersonalInformationBasic from "./PersonalInformationBasic";
 import PersonalInformationContact from "./PersonalInformationContact";
 import PersonalInformationDocument from "./PersonalInformationDocument";
 import Loan from "./Loan";
-
 import GetMoneyNow from "./GetMoneyNow";
 import LoanSummary from "./LoanSummary";
+import LoanHistory from "./LoanHistory";
 export {
   Login,
   Registration,
@@ -22,4 +22,5 @@ export {
   Loan,
   GetMoneyNow,
   LoanSummary,
+  LoanHistory,
 };

@@ -11,6 +11,7 @@ import {
   Loan,
   GetMoneyNow,
   LoanSummary,
+  LoanHistory,
 } from "./views";
 import AuthLayout from "./components/layouts/AuthLayout";
 import GuestLayout from "./components/layouts/GuestLayout";
@@ -59,6 +60,10 @@ export const router = createBrowserRouter([
       {
         path: "/loan/summary",
         element: <LoanSummary />,
+      },
+      {
+        path: "/loan/history",
+        element: <LoanHistory />,
       },
     ],
   },

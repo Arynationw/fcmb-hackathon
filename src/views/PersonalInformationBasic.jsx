@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-
+import Navbar from "../components/Navbar";
 function PersonalInformationBasic() {
   const navigate = useNavigate();
   // const url = `http://api.positionstack.com/v1/forward
@@ -17,7 +17,7 @@ function PersonalInformationBasic() {
   // }, []);
 
   return (
-    <div className="mx-4 py-4">
+    <div className="mx-4 pb-4">
       <h1 className="text-center text-fcmb text-2xl font-bold">
         Personal Information
       </h1>
